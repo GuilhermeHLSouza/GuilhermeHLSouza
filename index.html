@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animação</title>
+    <style>
+        img {
+            height: 250px;
+            position: absolute;
+            top: 35vh;
+            left: 40vw;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="palito1.png" alt="palito" id="palito">
+
+
+
+
+
+
+    <script>
+        let palito = document.getElementById("palito")
+        anim = 1
+        velocidade = 250
+        timer = 0
+        const anima = setInterval(() => {
+            if (anim <= 5) {
+                palito.src = `palito${anim}.png`
+                anim++
+                if(anim >=4){
+                    velocidade = 250
+                    timer
+                }
+            }
+            else {
+                anim = 1
+            }
+        }, velocidade);
+       
+    </script>
+</body>
+
+</html>
